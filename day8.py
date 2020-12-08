@@ -43,7 +43,6 @@ while not error:
 print(error)
 
 # Part 2
-found = False
 for i, rule in enumerate(rules):
     error = ''
     new_rules = rules[:]
@@ -58,9 +57,6 @@ for i, rule in enumerate(rules):
 
     while not error:
         error = gb.run()
-        if 'Exit' in error:
-            print(error)
-            found = True
-    if found:
+    if 'Exit' in error:
+        print(error)
         break
-
