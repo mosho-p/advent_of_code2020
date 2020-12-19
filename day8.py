@@ -31,7 +31,7 @@ class GameBoy:
             return f'LoopError {self.acc}'
 
 
-with open('inputs/day_8input.txt') as f:
+with open('inputs/day8_input.txt') as f:
     s = f.read().strip()
 rules = s.split('\n')
 
